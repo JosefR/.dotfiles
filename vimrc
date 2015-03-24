@@ -16,6 +16,7 @@ set ttymouse=xterm2
 
 " line number
 set number
+let &colorcolumn=join(range(81,999),",")
 
 " remove the '|' sign in vertical window seperator bar
 set fillchars+=vert:\ 
