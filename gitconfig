@@ -1,0 +1,9 @@
+[user]
+	name = Josef Raschen
+	email = josef@raschen.org
+[color]
+	ui = auto
+[core]
+	editor = vim
+[diff]
+	tool = vimdiff
