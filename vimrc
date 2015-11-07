@@ -10,6 +10,8 @@ set autoindent
 set ignorecase
 set smartcase
 
+set hlsearch " highlight search 
+
 " allow use of mouse
 set mouse=a
 set ttymouse=xterm2
@@ -34,6 +36,7 @@ Plugin 'https://github.com/kien/ctrlp.vim.git'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'https://github.com/sickill/vim-monokai.git'
+Plugin 'michalbachowski/vim-wombat256mod.git'
 call vundle#end()
 filetype plugin indent on 
 
@@ -41,7 +44,7 @@ autocmd FileType make set noexpandtab
 
 " Force correct coding style in linux source tree files ... (TODO: there has 
 " to be a better solution for this
-autocmd BufNewFile,BufRead */linux*/* set noexpandtab tabstop=8 shiftwidth=8 textwidth=78
+autocmd BufNewFile,BufRead */linux/* set noexpandtab tabstop=8 shiftwidth=8 textwidth=78
 
 " Disable folding for Markdown
 let g:vim_markdown_folding_disabled=1
