@@ -5,9 +5,9 @@ My configuration file repository.
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 #### Install the dotfiles
-git clone https://github.com/JosefR/.dotfiles.git ~/.dotfiles
-cd ~/.dotfiles
-./install.sh
+git clone https://github.com/JosefR/.dotfiles.git ~/.dotfiles  
+cd ~/.dotfiles  
+./install.sh  
 
 #### Install Vim plugins
 vim (ignore warning abput missing color scheme)
