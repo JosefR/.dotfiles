@@ -7,10 +7,19 @@
 mkdir -p ~/.vim/colors
 wget -O ~/.vim/colors/monokai.vim https://raw.githubusercontent.com/sickill/vim-monokai/master/colors/monokai.vim 
 
-for i in *; do
-    if [ "$i" != "install.sh" ]; then
-        ln -s $(pwd)/$i ~/.$i
-        echo "ln -s $(pwd)/$i ~/.$i"
+for i in home/*; do
+    if [ -f "$i" ]; then
+        ln -s $(pwd)/$i ~/.$(basename $i)
+        echo "ln -s $(pwd)/$i ~/.$(basename $i)"
     fi
 done
 
+QTCREATOR_CONFIG_DIR=".config/QtProject/qtcreator"
+
+if [ ! -d "~/${QTCREATOR_CONFIG_DIR}/styles" ]; then
+    echo "create directory '${QTCREATOR_CONFIG_DIR}/styles'"
+    mkdir -p "${QTCREATOR_CONFIG_DIR}/styles"
+fi
+
+# QtCreator config
+ln -s $(pwd)/home/${QTCREATOR_CONFIG_DIR}/styles/qtcreator-colorscheme.xml ~/${QTCREATOR_CONFIG_DIR}/styles/qtcreator-colorscheme.xml
