@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <style-scheme version="1.0" name="Dark Theme based on Monokai/TextMate">
-  <style name="Text" foreground="#ffffff" background="#262626"/>
+  <style name="Text" foreground="#ffffff" background="#060606"/>
   <style name="Link" foreground="#6c6c6c" underlineStyle="SingleUnderline"/>
   <style name="Selection" background="#5f5f5f"/>
-  <style name="LineNumber" foreground="#6c6c6c" background="#3a3a3a"/>
+  <style name="LineNumber" foreground="#6c6c6c" background="#232323"/>
   <style name="SearchResult" background="#555500"/>
   <style name="SearchScope" background="#222200"/>
   <style name="Parentheses" foreground="#ff005f"/>
@@ -60,5 +60,6 @@
   <style name="Error" underlineColor="#ff0000" underlineStyle="SingleUnderline"/>
   <style name="ErrorContext" underlineColor="#ff0000" underlineStyle="DotLine"/>
   <style name="Declaration"/>
-  <style name="C_OUTPUT_ARGUMENT"/>
+  <style name="OutputArgument" foreground="#000000" background="#ffffff" italic="true"/>
+  <style name="LastStyleSentinel"/>
 </style-scheme>

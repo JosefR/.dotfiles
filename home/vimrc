@@ -26,8 +26,9 @@ syntax on
 
 autocmd FileType make set noexpandtab
 
-" Force correct coding style in linux source tree files ... (TODO: there has 
-" to be a better solution for this
+" Force correct coding style for some projects ... 
 autocmd BufNewFile,BufRead */linux/* set noexpandtab tabstop=8 shiftwidth=8 textwidth=78
+autocmd BufNewFile,BufRead */blender/* set noexpandtab tabstop=8 shiftwidth=8 textwidth=120
+
 
 colorscheme monokai
